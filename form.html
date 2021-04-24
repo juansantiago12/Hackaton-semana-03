@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercer Reto</title>
+</head>
+<body>
+    <section>
+        <h1>Datos Personales</h1>
+        <form action="">
+            <div>
+                <input type="text" name="first" id="Nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <input type="text" name="last" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div>
+                <input type="number" name="year" id="edad" placeholder="Edad" min="18" max="80" required>
+            </div>
+            <div>
+                <input type="radio" id="hombre" name="gender">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="gender">
+                <label for="mujer">Mujer</label>
+            </div>
+            <div>
+                <input type="text" name="dni" id="dni" placeholder="DNI" required pattern="[A-Za-z0-9]+" minlength="8">
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Correo" required>
+            </div>
+            <div>
+                <input type="submit" value="Registrar">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
