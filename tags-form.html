@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Reto</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="">
+        <fieldset>
+            <legend>Tipo "Text"</legend>
+            <p>Representa a un campo de entrada de texto</p>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo "Number"</legend>
+            <p>Representa a un campo de entrada de número</p>
+            <div>
+                <label for="cel">Número de celular</label>
+                <input type="number" name="celular" id="cel" max="9">   
+            </div>
+            <div>
+                <label for="dni">Número de DNI</label>
+                <input type="number" name="dni" id="dni" max="8">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo "Email"</legend>
+            <p>Obliga al usuario a escribir dentro del campo una dirección de correo electrónico válida.</p>
+            <div>
+                <label for="email">Ingrese su correo</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo "Checkbox"</legend>
+            <p>Es un elemento de entrada que te permite insertar un vector o array de valores.</p>
+            <div>
+                <input type="checkbox" id="cine" name="gustos"> 
+                <label for="cine">Cine</label>
+            </div>
+            <div>
+               <input type="checkbox" id="music" name="gustos"> 
+               <label for="music">Música</label>
+           </div>
+           <div>
+               <input type="checkbox" id="paint" name="gustos"> 
+               <label for="paint">Dibujar</label>
+           </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo "Radio"</legend>
+            <p>Representa una opción que pertenece a un grupo en el que no más de una opción puede ser seleccionada al mismo tiempo</p>
+            <div>
+                <input type="radio" id="hombre" name="gender">
+                <label for="hombre">Hombre</label>
+            </div>
+            <div>
+                <input type="radio" id="mujer" name="gender">
+                <label for="mujer">Mujer</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Etiqueta "Select"</legend>
+            <p>Representa un control que muestra un menú de opciones. Las opciones contenidas en el menú son representadas por elementos "option"</p>
+            <select name="country" id="">
+                <option value="def" selected disabled>Seleccione un pais</option>
+                <option value="pe">Perú</option>
+                <option value="ec">Ecuador</option>
+                <option value="mx">Mexico</option>
+                <option value="arg">Argentina</option>
+                <option value="chi">Chile</option>
+                <option value="col">Colombia</option>
+                <option value="bra">Brasil</option>
+                <option value="ven">Venezuela</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Etiqueta "Textarea"</legend>
+            <p>Representa un control para la edición mutilínea de texto sin formato.</p>
+            <label for="com">Deja tu omentario</label>
+            <textarea name="coment" id="com" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo "Submit"</legend>
+            <input type="submit" value="ENVIAR">
+        </fieldset>
+    </form>
+</body>
+</html>
